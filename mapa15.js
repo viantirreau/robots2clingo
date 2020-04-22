@@ -1,8 +1,8 @@
-const noRows = 16;
-const noCols = 16;
+const noRows = 15;
+const noCols = 15;
 const squareSize = 26;
 
-const canvasHeight = 600;
+const canvasHeight = 560;
 const canvasWidth = 700;
 
 let pallete = ["white", "black", "lightblue", "pink"];
@@ -243,16 +243,22 @@ function drawButton(btn) {
 function drawCopyButton() {
   stroke(0);
   fill(color("lightgreen"));
-  rect(10, 450, 75, 75);
+  rect(10, 450, 100, 75);
+  if (collisionPointRect(mouseX, mouseY, 10, 450, 100, 75)) {
+    if (mouseIsPressed) mapToClingo();
+    fill(color("springgreen"));
+    rect(10, 450, 100, 75);
+    textSize(10);
+    noStroke();
+    fill(0);
+    text("(Clic para copiar)", 10 + 100 / 2, 450 + 75 / 2 + 20);
+  }
+  noStroke();
+  textSize(13);
   textAlign(CENTER, CENTER);
   fill(0);
-  noStroke();
-  textSize(10);
-  text("Generar ASP", 10 + 75 / 2, 450 + 75 / 2);
+  text("Generar ASP", 10 + 100 / 2, 450 + 75 / 2);
   textSize(14);
-  if (collisionPointRect(mouseX, mouseY, 10, 450, 75, 75) && mouseIsPressed) {
-    mapToClingo();
-  }
 }
 
 function writeLabel(btn) {
