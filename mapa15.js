@@ -52,7 +52,6 @@ function init(map, robots, usedRobots) {
 
 function setup() {
   clear();
-  frameRate(25);
   createCanvas(canvasWidth, canvasHeight);
   pixelDensity(1);
   addButtons();
