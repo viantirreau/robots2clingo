@@ -55,9 +55,6 @@ function draw() {
 
   // Interactive stuff
   handleCellClick(blockSize);
-
-  // Misc
-  displayInstructions();
 }
 
 
@@ -69,20 +66,4 @@ function keyPressed() {
     // Reverse the show numbers boolean
     sharedData.showNumbers = !sharedData.showNumbers;
   }
-}
-
-
-/*
- * Displays the instructions
- */
-const displayInstructions = () => {
-  noStroke();
-  fill(0);
-  textAlign(LEFT, CENTER);
-
-  text(
-    "Usa el mouse para dibujar celdas. Presiona Z para mostrar/ocultar los números",
-    25,
-    CANVAS_HEIGHT - 10
-  );
 }
