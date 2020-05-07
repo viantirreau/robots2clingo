@@ -1,17 +1,22 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Robots2Clingo</title>
-    <script src="p5.min.js"></script>
-    <script src="p5.play.js"></script>
-    <script src="p5SceneManager.js"></script>
-    <script src="mapa15.js"></script>
+    <script defer src="vendor/p5.min.js"></script>
+    <script defer src="vendor/p5.play.js"></script>
+    <script defer src="vendor/p5SceneManager.js"></script>
+    <script defer src="js/helpers.js"></script>
+    <script defer src="js/selector.js"></script>
+    <script defer src="js/buttons.js"></script>
+    <script defer src="js/map.js"></script>
+    <script defer src="js/main.js"></script>
   </head>
+
   <body oncontextmenu="return false;">
     <div style="position: absolute; left: 10px; bottom: 10px;">
-      <a href="index20.html" style="padding-right: 15px;">Ir a mapa 20x20</a>
+      Número de celdas: <select id="select"></select> |
       <a href="https://github.com/viantirreau/robots2clingo">Clona el repo</a>
     </div>
   </body>
