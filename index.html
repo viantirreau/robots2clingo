@@ -1,12 +1,20 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <!-- Metadata -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Robots2Clingo</title>
+
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="css/main.css">
+
+    <!-- Vendor JavaScript -->
     <script defer src="vendor/p5.min.js"></script>
     <script defer src="vendor/p5.play.js"></script>
     <script defer src="vendor/p5SceneManager.js"></script>
+
+    <!-- JavaScript -->
     <script defer src="js/helpers.js"></script>
     <script defer src="js/selector.js"></script>
     <script defer src="js/buttons.js"></script>
@@ -14,8 +22,8 @@
     <script defer src="js/main.js"></script>
   </head>
 
-  <body oncontextmenu="return false;">
-    <div style="position: absolute; left: 10px; bottom: 10px;">
+  <body>
+    <div class="main-container">
       Número de celdas: <select id="select"></select> |
       <a href="https://github.com/viantirreau/robots2clingo">Clona el repo</a>
     </div>

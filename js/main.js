@@ -12,6 +12,11 @@ const sharedData = { // BEWARE. Global variable
 };
 
 
+// Disable right click
+window.oncontextmenu = (e) => {
+  e.preventDefault();
+}
+
 selectorSetUp();
 
 
