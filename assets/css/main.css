@@ -1,0 +1,9 @@
+.main-container {
+  position: absolute;
+  left: 10px;
+  bottom: 10px;
+}
+
+.heart {
+  height: 1em;
+}

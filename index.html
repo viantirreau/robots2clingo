@@ -1,17 +1,33 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Metadata -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Robots2Clingo</title>
-    <script src="p5.min.js"></script>
-    <script src="p5.play.js"></script>
-    <script src="p5SceneManager.js"></script>
-    <script src="mapa15.js"></script>
+
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="assets/css/main.css">
+
+    <!-- Vendor JavaScript -->
+    <script async src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.0.0/p5.min.js"></script>
+    <script defer src="vendor/p5.play.js"></script>
+    <script defer src="vendor/p5SceneManager.js"></script>
+
+    <!-- JavaScript -->
+    <script defer src="assets/js/helpers.js"></script>
+    <script defer src="assets/js/selector.js"></script>
+    <script defer src="assets/js/buttons.js"></script>
+    <script defer src="assets/js/map.js"></script>
+    <script defer src="assets/js/main.js"></script>
   </head>
-  <body oncontextmenu="return false;">
-    <div style="position: absolute; left: 10px; bottom: 10px;">
-      <a href="index20.html" style="padding-right: 15px;">Ir a mapa 20x20</a>
+
+  <body>
+    <div class="main-container">
+      Número de celdas: <select id="select"></select> |
+      Usa el mouse para dibujar celdas. Presiona Z para mostrar/ocultar los números |
+      Hecho con mucho <img src="assets/svg/heartbeat-solid.svg" class="heart" alt="Heart"> por
+      <a href="https://github.com/viantirreau" target="_blank">Víctor Tirreau</a> y <a href="https://github.com/daleal" target="_blank">Daniel Leal</a> |
       <a href="https://github.com/viantirreau/robots2clingo">Clona el repo</a>
     </div>
   </body>
